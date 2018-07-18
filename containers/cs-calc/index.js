@@ -36,9 +36,12 @@ class CSCalc extends Component {
   render() {
     return(
       <Fragment>
-        <CSCalcForm calcRoi={this.calcRoi} calcRatio={this.calcRatio}/>
-        <div>{`ROI: ${this.state.roi}`}</div>
-        <div>{`LTV : CAC Ratio: ${this.state.ratio}`}</div>
+        <CSCalcForm
+          calcRoi={this.calcRoi}
+          calcRatio={this.calcRatio}
+          breakeven={this.state.roi}
+          ratio={this.state.ratio}
+        />
       </Fragment>
     )
   }
